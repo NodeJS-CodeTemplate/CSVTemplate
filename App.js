@@ -16,6 +16,7 @@ fs.createReadStream('./statistic.csv')
   .pipe(csv())
   .on('data',(data)=>result.push(data))
   .on('end' ,() =>{
-        result.forEach(item=>{console.log(item);
+        result.forEach(item=>{
+            console.log(item);
    })
 })
